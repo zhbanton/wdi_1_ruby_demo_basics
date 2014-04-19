@@ -219,6 +219,94 @@ Variables are containers for values. The values we're going to contain here are 
 
 _Extra Credit: Open variables_in_depth.rb and run. Work thru these concepts._
 
+## String Interpolation
+Allow variable names and expressions to be interpreted as strings inside of other strings.
+
+* uses the pound curly brace syntax  #{some_variable}
+
+### Demo
+* Create a strings_interpolation.rb in the demo dir.
+
+
+## Input with gets
+The method gets will:
+* Wait for user input in the console/terminal.
+* Return the user input within the program when the user hits the return/enter key.
+
+Open years_until_retire.rb and run it.
+
+### Lab
+* Create a simple program to prompt the user to enter their first name, then prompt for their last name.
+* Create 2 variables for the first and last name. 
+* And print the first and last name variables to the terminal.
+* Use string iterpolation to print their full name.
+
+_Hint: use the String#split method_
+
+## Conditionals
+
+The Ruby Conditionals If and Case statement are best described with a code along.
+
+### Demo
+* Create conditionals.rb in the demo dir.
+
+#### Lab 
+* Create a conditionals_lab.rb in the lab directory.
+* Ask the user for thier letter grade, A|B|C|D|F.
+* Print out a message to the user depending on their grade. 
+* Do this once using If/Elsif/Else and once using the Case statement.
+
+## Loops
+Will run the _body_ of the loop until either a condition is met OR until a break statement is executed in the body of the loop.
+
+#### Demo
+* Create a loops.rb in the demo dir.
+
+#### Lab
+* Create a loops_lab.rb it the lab dir.
+* Create a variable for the number to guess.
+* Create a variable that will hold number entered by the user.
+* Create a loop that prompt the user for a number.
+* Check the entered number against the number to guess.
+* If the user has guessed the number, print out a success message.
+* After getting the above to work. Limit the user to 3 guesses.
+
+
+#### Kinds of Loop statements.
+
+* while  
+	<pre>
+	while bool-expr [do]
+      # Invoke this code
+	end
+	</pre>
+	
+	
+* until
+	<pre>
+	until bool-expr [do] 
+      # Invoke this code
+    end
+	</pre>
+	
+
+* loop
+* for
+	<pre>
+	for name [, name]... in expr [do]
+	  # Invoke this code
+	end
+	</pre>
+	
+	
+#### Breaking out of loop body
+* break # terminates loop immediately.  
+* redo  # immediately repeats w/o rerunning the condition.
+* next  # starts the next iteration through the loop.
+* retry # restarts the loop, rerunning the condition
+
+
+
 
 ## Ruby Tools
 
@@ -238,71 +326,6 @@ It will allow you to enter ruby expressions and run them. _Lets use Pry instead_
 Lets start pry and play. Lets test out some of what we've learned above.
 
 
-## Input with gets
-The method gets will:
-* Wait for user input in the console/terminal.
-* Return the user input within the program when the user hits the return/enter key.
-
-Open years_until_retire.rb and run it.
-
-### Lab
-Create a simple program to enter their full name, "Tom Dyer".
-Create 2 variables for the first and last name. And print the values of variables to the terminal.
-
-_Hint: use the String#split method_
-
-## Conditionals
-
-The Ruby Conditionals If and Case statement are best described with a code along.
-
-### Demo
-* Create conditionals.rb in the demo dir.
-
-#### Lab 
-* Create a conditionals_lab.rb in the lab directory.
-* Ask the user for thier letter grade.
-* Print out a message to the user depending on their grade. 
-* Do this once using If/Elsif/Else and once using the Case statement.
-
-## Loops
-* for
-	<pre>
-	for name [, name]... in expr [do]
-	  # Invoke this code
-	end
-	</pre>
-* while  
-	<pre>
-	while bool-expr [do]
-      # Invoke this code
-	end
-	</pre>
-	
-	
-* until
-	<pre>
-	until bool-expr [do] 
-      # Invoke this code
-    end
-	</pre>
-	
-
-* loop
-
-* break # terminates loop immediately.  
-* redo  # immediately repeats w/o rerunning the condition.
-* next  # starts the next iteration through the loop.
-* retry # restarts the loop, rerunning the condition
-
-#### Demo
-* Create a loops.rb in the demo dir.
-
-#### Lab
-* Create a loops_lab.rb it the lab dir.
-
-## String Interpolation
-
-
 ## Operator Precedence.
 When ruby sees mulitple operators, (==, <, >, &&, ||, ...), it will follow a set of evalation rules.
 
@@ -310,7 +333,10 @@ When ruby sees mulitple operators, (==, <, >, &&, ||, ...), it will follow a set
 
 ### Lab 
 * Create a file operator_precedence.rb
-* Add the below
+
+## Nil 
+The "Absolute-Positively-Nothing" value. You'll see this in Pry and and many times when you try to access a variable that does NOT exist.
+
 
 ## Falsey and Truthy
 In Ruby.  
@@ -319,8 +345,26 @@ In Ruby.
 
 [Ruby Truthy or Falsy](https://gist.github.com/jfarmer/2647362)
 
+### Contants.
 
+Contants are meant to be variables that are never modified. They are _immutable_.
 
+_We'll see more how these are used as we go along_
+
+### Examples
+* MAX_NUM_OF_STUDENTS = 25
+* APPLICATION_NAME = "Ruby Calculator"
+* class Calculator   # creates a CONSTANT named Calulator
+* module Order   # creates a CONSTANT named Order
+
+## Reserved Words
+These words are reserved in the Ruby language.  
+alias, and, BEGIN, begin,break, case, class, def, defined?, do, else, elsif,   END, end, ensure, false, or if,in, module, next, nil, not, or, redo,  
+rescue, retry, return, self, super, then, true, undef, unless, until,when, while   yield
+
+Only use these reserved words as intended by the language.
 
 ## Ruby Styles 
+See this for Ruby name conventions and styles.
+
 [Ruby Style Guide](https://github.com/styleguide/ruby)

@@ -19,7 +19,6 @@ else
   puts "Say Goodbye"
 end
 
-
 # Boolean Expression (bool-expr) '33 < 37' evaluates to true
 # Then invoke code inside the if clause
 # Else invoke the code inside the else clause.
@@ -65,6 +64,9 @@ is_vegan = true
 puts "eating veggies" if is_vegan
 
 # Case statement. (Not used that often)
+# When you need to take a variety of different actions based on the
+# value of a single variable, multiple if..elsif tests are verbose and
+# repetitive.
 person_age = 43
 
 case person_age
@@ -74,6 +76,33 @@ when middle_age
   puts "Hey Midster"
 else
   puts "Hey Youngster"
+end
+
+
+# Unlike other langauges, for example C, you do NOT need a break
+# statement in each when clause. Only first matching bool-expr will
+# execute.
+# For Example: This will ONLY print "Your a Tom"
+# What if we match a couple of when boolean expressions?
+name = "Tom Smith"
+case
+when name.include?("Tom")
+  puts "Your a Tom"
+when name.include?("Smith")
+  puts "Your a Smith"
+when name == "Tom Smith"
+  puts "Your a Tom Smith"
+else
+  puts "Can find any of the above"
+end
+
+# Can match multiple values in the when bool-expr
+today = "Sunday"
+case today
+when "Monday", "Wednesday"
+  puts "It's a long day"
+when "Saturday", "Sunday"
+  puts "It's the weekend"
 end
 
 # When the target expression, target-expr, equals the boolean expression in the 'when' clause.
