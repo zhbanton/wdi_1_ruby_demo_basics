@@ -11,6 +11,14 @@ puts 'simple string\n\n\n'  # NOTE: the single quotes will NOT process the speci
 puts "\tsimple string"   # Tab special char
 puts "simple\s\s\s\sstring"  # Space special char
 
+# Find specific characters by 'index' or 'offset' using 'braces'
+puts  "simple string"[0]
+puts  "simple string"[3]
+puts  "simple string"[1..4]
+puts "simple string"[-1]
+puts "simple string"[-2]
+puts "simple string"[5..-1]
+
 # concatenation
 puts "simple string" + "another string"
 puts "simple string" << " another string"
