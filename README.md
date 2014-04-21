@@ -47,6 +47,8 @@ The Ruby _method_ __puts__ will print a string to the terminal output.
 _Need this for the rest of the demos/code alongs_  
 `puts "Hey I'm printing this to the terminal"`
 
+Ruby also has a _print_ method that doesn't output newline on output.
+
 ### Demo/Code Along
 * Create a show_names.rb in the demo dir.
 * Create a couple of puts statements to display you first, middle, last and full name.
@@ -143,6 +145,25 @@ If the RHS is __greater than__ the LHS then the expression will be true.
 5 > 77  
 33 > 33  
 33 >= 33  
+
+### Spaceship Operator (<=>)
+_LHS is Left Hand Side_
+_RHS is Rigth Hand Side_
+
+11 <=> 33   # -1 If LHS < RHS 
+11 <=> 11   # 0 If LHS == RHS 
+11 <=> 1    # 1 If LHS > RHS
+
+#### Negation (Bang) Operator (!)
+
+!false # true
+!true  # false
+!!true  # true
+!!false  #false
+!(35 < 2)  # true
+!("some string" == "somestring")   # false
+
+_Sometimes the bang (!) operator is used to make it clear that we're looking for a true or false_
 
 #### OR Operator (||)
 The OR operator will compare it's Left Hand Side (LHS) to it's Right Hand Side (RHS).
@@ -306,8 +327,19 @@ Will run the _body_ of the loop until either a condition is met OR until a break
 * retry # restarts the loop, rerunning the condition
 
 
-
-
+#### Lab (Madlib)
+* Create a program, mad_libs.rb 
+* This program should prompt the user for a phrase. 
+* The phrase entered should have a string that is surrounding with parens. For example:   
+    This ((food)) is gross.
+* The program will then determine if the phrase has the correct syntax.  
+   * It should have a word surrounded by a '((' and   '))'
+   * The word in the parens can not be blank/empty.
+   * Show the user the problem if one is found.
+* Then prompt the user for a word to replace the word in the parens.
+* Print out the new phrase, with the replaced word, to the output.
+* _Extra: Do over without using string interpolation._
+* _Extra: Ask for a different word delimiter, maybe '<=', '=>' instead of '(('  '))'_
 ## Ruby Tools
 
 ### Interactive Ruby (IRB)
