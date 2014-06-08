@@ -1,10 +1,3 @@
-# Variables are containers for values. The values we're going to contain here are of simple data types strings and numbers. But variables can hold any data type.
-
-# A variable in Ruby is just a label for a container.
-# A variable could contain almost anything - a string, an array, a hash.
-# A variable name may only contain lowercase letters, numbers, and underscores.
-# A variable name should ideally make sense in the context of your program.
-
 # Create a variable age and assign it a value
 # Assignment Operator (=).
 current_address = "35 Sixth Ave"
