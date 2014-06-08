@@ -98,12 +98,11 @@ A string may have one or more special characters.
 * Read about one of the to_<something> methods and explain it to the student to your left.
 
 ## Variables
-Variables are pointers to objects. These objects we're going to contain here are of simple data types strings and numbers. But variables can hold any data type.
+Variables are pointers to objects. These objects we're going to reference here are of simple data types strings and numbers. But variables can reference an object of any data type.
 
 * A variable in Ruby is just a label that is a reference, or pointer to an object.
-* A variable could point almost anything - a string, an array, a hash.
 * A variable name may only contain lowercase letters, numbers, and underscores.
-* A variable name should ideally make sense in the context of your program. Don't use variable names that are meaningless like x, y, foo.
+* A variable name should make sense in the context of your program. Don't use variable names that are meaningless like x, y, foo.
 
 ### Demo/Code Along
 * Create a file variables.rb in the demo dir.
@@ -122,10 +121,10 @@ Create a file vehicle_devaluate.rb that create variables for.
 * your first name.
 * your last name.
 * the make/model of your first car, or bike.
-* The year you got it.
+* the year you got it.
 * How much you payed for it.
-* How much it would be worth in the year 2018, given devaluates by by 3 percent each year.
-* Replace the spaces in the file with the variables you created above.
+* How much it would be worth in the year 2018, given it devaluates by by 3 percent each year.
+* Replace the spaces in the file with the variables you created above and output the string using puts.
 
 ## Input with gets
 The method gets will:
@@ -142,22 +141,22 @@ Do the above lab __BUT__ prompt the user for the value of each variable.
 The Ruby Conditionals If and Case statement are best described with a code along.
 
 ### Demo
-* Create conditionals.rb in the demo dir.
+* Create conditionals.rb.
 
 #### Lab 
-* Create a conditionals_lab.rb in the lab directory.
+* Create a conditionals_lab.rb.
 * Ask the user for thier letter grade, A|B|C|D|F.
 * Print out a message to the user depending on their grade. 
-* Do this once using If/Elsif/Else statement.
+* Do this once using if/elsif/else statement.
 
 ## Loops
 Will run the _body_ of the loop until either a condition is met OR until a break statement is executed in the body of the loop.
 
 #### Demo
-* Create a loops.rb in the demo dir.
+* Create a loops.rb file.  
 
 #### Lab
-* Create a loops_lab.rb it the lab dir.
+* Create a loops_lab.rb.
 * Create a variable for the number to guess.
 * Create a variable that will hold number entered by the user.
 * Create a loop that prompt the user for a number.
