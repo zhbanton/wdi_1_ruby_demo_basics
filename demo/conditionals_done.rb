@@ -1,3 +1,7 @@
+require 'pry'
+
+# Breakpoint with pry
+binding.pry
 
 # If/Else statement
 # General Form is:
@@ -69,10 +73,10 @@ puts "eating veggies" if is_vegan
 # repetitive.
 person_age = 43
 
-case person_age
-when old_age
+case 
+when person_age >= old_age 
   puts "Hey Oldster"
-when middle_age
+when person_age >= middle_age
   puts "Hey Midster"
 else
   puts "Hey Youngster"
